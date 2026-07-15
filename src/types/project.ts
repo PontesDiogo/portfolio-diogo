@@ -15,6 +15,10 @@ export interface ProjectHighlight {
   description: string;
 }
 
+export interface ProjectImage {
+  src: string;
+  alt: string;
+}
 export interface Project {
   id: string;
   index: string;
@@ -23,10 +27,11 @@ export interface Project {
   headline: string;
   description: string;
   technologies: string[];
-  image?: string;
+  images?: ProjectImage[];
   imageAlt?: string;
   highlights: ProjectHighlight[];
   links: ProjectLink[];
   status?: string;
   attribution?: string;
 }
+

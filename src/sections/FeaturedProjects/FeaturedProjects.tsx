@@ -64,9 +64,25 @@ export function FeaturedProjects() {
                   </ul>
                 </div>
 
-                <div className="featured-project__visual">
-                  {project.image ? (
-                    <img src={project.image} alt={project.imageAlt ?? ""} />
+                <div
+                  className={`featured-project__visual featured-project__visual--${project.id}`}
+                >
+                  {project.images?.length ? (
+                    <div className="featured-project__screens">
+                      <img
+                        className="featured-project__screen featured-project__screen--primary"
+                        src={project.images[0].src}
+                        alt={project.images[0].alt}
+                      />
+
+                      {project.images[1] && (
+                        <img
+                          className="featured-project__screen featured-project__screen--secondary"
+                          src={project.images[1].src}
+                          alt={project.images[1].alt}
+                        />
+                      )}
+                    </div>
                   ) : (
                     <div className="featured-project__placeholder">
                       <span>Imagem do projeto</span>
@@ -86,6 +102,11 @@ export function FeaturedProjects() {
                       href={link.url}
                       target={link.external ? "_blank" : undefined}
                       rel={link.external ? "noreferrer" : undefined}
+                      aria-label={
+                        link.external
+                          ? `${link.label} — abre em uma nova aba`
+                          : link.label
+                      }
                     >
                       {link.label}
                       {link.external && <span aria-hidden="true">↗</span>}

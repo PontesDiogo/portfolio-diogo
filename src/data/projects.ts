@@ -1,3 +1,6 @@
+import gibiSiteImage from "../assets/images/gibi-site.png";
+import gibiAdminImage from "../assets/images/gibi-admin.png";
+
 import type { Project } from "../types/project";
 
 export const projects: Project[] = [
@@ -59,6 +62,16 @@ export const projects: Project[] = [
     description:
       "Site institucional com área administrativa para gerenciamento de projetos, imagens, publicação e destaques da página inicial.",
     technologies: ["React", "TypeScript", "Supabase", "Netlify"],
+    images: [
+      {
+        src: gibiSiteImage,
+        alt: "Página pública do site institucional da Gibi Carpintaria",
+      },
+      {
+        src: gibiAdminImage,
+        alt: "Área administrativa utilizada para gerenciar projetos da Gibi Carpintaria",
+      },
+    ],
     highlights: [
       {
         title: "Gestão de conteúdo",
