@@ -42,7 +42,7 @@ export const projects: Project[] = [
     links: [
       {
         label: "Visitar aplicação",
-        url: "#",
+        url: "https://sos-bichos.netlify.app",
         external: true,
       },
     ],
