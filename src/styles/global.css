@@ -1,0 +1,48 @@
+body {
+  background: var(--color-background);
+  color: var(--color-text-primary);
+  font-family: var(--font-body);
+  font-size: var(--font-size-base);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+#root {
+  min-height: 100vh;
+  overflow: hidden;
+  cursor: default;
+}
+
+::selection {
+  background: var(--color-accent);
+  color: var(--color-background);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-display);
+  font-weight: 500;
+  line-height: 1.1;
+}
+
+p {
+  color: var(--color-text-secondary);
+}
+
+
+button,
+a {
+  cursor: pointer;
+}
+
+a,
+button {
+  transition:
+    color var(--transition-fast),
+    opacity var(--transition-fast),
+    background-color var(--transition-fast),
+    border-color var(--transition-fast),
+    transform var(--transition-fast);
+}
