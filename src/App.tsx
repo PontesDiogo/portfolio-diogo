@@ -1,5 +1,6 @@
 import { Header } from "./components/layout/Header/Header";
 import { Hero } from "./sections/Hero/Hero";
+import { Process } from "./sections/Process/Process";
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
 
       <main>
         <Hero />
+        <Process />
       </main>
     </>
   );
