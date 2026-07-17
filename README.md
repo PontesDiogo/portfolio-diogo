@@ -1,32 +1,88 @@
-# React + TypeScript + Vite
+# Portfólio — Diogo Garcia
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Portfólio profissional desenvolvido para apresentar minha trajetória, projetos e forma de trabalhar com análise de sistemas e desenvolvimento web.
 
-Currently, two official plugins are available:
+A proposta do site é mostrar não apenas tecnologias utilizadas, mas principalmente como transformo problemas reais em fluxos, sistemas e soluções digitais.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Sobre o projeto
 
-## React Compiler
+O portfólio foi construído com foco em estudos de caso.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Os projetos apresentados demonstram diferentes aspectos da minha experiência:
 
-## Expanding the Oxlint configuration
+- desenvolvimento de produto digital;
+- aplicação de tecnologia em contexto profissional;
+- análise de processos;
+- lógica e algoritmos.
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+## Cases apresentados
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
-```
+### SOS Bichos
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+Plataforma para registro e acompanhamento de ocorrências relacionadas a animais.
+
+Principais recursos:
+
+- autenticação;
+- perfis de usuário e administrador;
+- acompanhamento de denúncias;
+- upload de múltiplas imagens;
+- geolocalização;
+- seleção de endereço por mapa;
+- gestão administrativa.
+
+### Gibi Carpintaria
+
+Site institucional desenvolvido para uma empresa do setor madeireiro, com área administrativa para gerenciamento de conteúdo.
+
+Principais recursos:
+
+- cadastro de projetos;
+- upload de imagens;
+- edição e exclusão de publicações;
+- controle de publicação;
+- projetos em destaque;
+- acesso administrativo restrito.
+
+### Controle de Entregas por Obra
+
+Estudo de caso de análise de sistemas aplicado a um problema real de logística.
+
+Minha participação envolveu:
+
+- identificação do problema;
+- análise do processo;
+- levantamento das regras de negócio;
+- desenho do fluxo;
+- concepção da arquitetura funcional.
+
+A implementação técnica no ERP interno foi realizada por outro desenvolvedor, em Delphi.
+
+### Visualizador de Dijkstra
+
+Aplicação acadêmica criada para representar visualmente o algoritmo de Dijkstra e o cálculo do caminho de menor custo entre dois pontos.
+
+## Tecnologias
+
+- React
+- TypeScript
+- Vite
+- CSS
+- Framer Motion
+- React Icons
+- Oxlint
+
+## Estrutura do projeto
+
+```text
+src/
+├── assets/
+├── components/
+│   ├── layout/
+│   └── ui/
+├── data/
+├── sections/
+├── styles/
+├── types/
+├── App.tsx
+└── main.tsx
