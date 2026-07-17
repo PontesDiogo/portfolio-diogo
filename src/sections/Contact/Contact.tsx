@@ -71,8 +71,7 @@ export function Contact() {
           viewport={{ once: true }}
           transition={{ duration: 0.8, delay: 0.15 }}
         >
-          <span>Diogo Garcia</span>
-          <span>Itu / SP</span>
+          
         </motion.div>
       </Container>
     </section>

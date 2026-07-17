@@ -1,5 +1,8 @@
 import gibiSiteImage from "../assets/images/gibi-site.png";
 import gibiAdminImage from "../assets/images/gibi-admin.png";
+import formularioImagee from "../assets/images/formulario-preenchido.png";
+import mapaImage from "../assets/images/mapa-formulario.png";
+
 
 import type { Project } from "../types/project";
 
@@ -19,6 +22,16 @@ export const projects: Project[] = [
       "Supabase",
       "Leaflet",
       "Netlify",
+    ],
+    images: [
+      {
+        src: formularioImagee,
+        alt: "Formulário de registro de ocorrência preenchido",
+      },
+      {
+        src: mapaImage,
+        alt: "Mapa de localização do formulário",
+      },
     ],
     highlights: [
       {
