@@ -4,6 +4,7 @@ import { Process } from "./sections/Process/Process";
 import { FeaturedProjects } from "./sections/FeaturedProjects/FeaturedProjects";
 import { OtherProjects } from "./sections/OtherProjects/OtherProjects";
 import { About } from "./sections/About/About";
+import { Technologies } from "./sections/Technologies/Technologies";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <FeaturedProjects />
         <OtherProjects />
         <About />
+        <Technologies />
       </main>
     </>
   );
