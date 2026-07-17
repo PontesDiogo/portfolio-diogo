@@ -1,6 +1,6 @@
 import gibiSiteImage from "../assets/images/gibi-site.png";
 import gibiAdminImage from "../assets/images/gibi-admin.png";
-import formularioImagee from "../assets/images/formulario-preenchido.png";
+import formularioImage from "../assets/images/formulario-preenchido.png";
 import mapaImage from "../assets/images/mapa-formulario.png";
 
 
@@ -25,7 +25,7 @@ export const projects: Project[] = [
     ],
     images: [
       {
-        src: formularioImagee,
+        src: formularioImage,
         alt: "Formulário de registro de ocorrência preenchido",
       },
       {
